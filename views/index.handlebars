@@ -1,0 +1,20 @@
+<h1>Eat da Burgerr!!</h1>
+
+<aside>
+    <ul>
+        {{#each burger}}
+            {{#unless devoured}}
+                <button class="eatBurg" data-id='{{id}}' type="button"> {{ burger_name }} </button>
+            {{/unless}}
+        {{/each}}
+    </ul>
+</aside>
+<main>
+      <div class="form-group">
+    <label for="quo">What Kinda Burga You Want?:</label>
+    <textarea id="burg" name="burgs"></textarea>
+  </div>
+
+  <button type="submit">Make Burg</button>
+</form>
+</main>
