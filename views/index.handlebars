@@ -1,6 +1,7 @@
 <h1>Eat da Burgerr!!</h1>
 
 <aside>
+    <h2>Burgs to Devour!</h2>
     <ul>
         {{#each burger}}
             {{#unless devoured}}
@@ -11,10 +12,22 @@
 </aside>
 <main>
       <div class="form-group">
-    <label for="quo">What Kinda Burga You Want?:</label>
+    <label for="quo">What Kinda Burger You Cravin?</label>
     <textarea id="burg" name="burgs"></textarea>
   </div>
 
-  <button type="submit">Make Burg</button>
+  <button type="submit">Make this Burger!</button>
 </form>
 </main>
+<aside>
+    <h2>Devoured Burgs</h2>
+    <ul>
+        {{#each burger}}
+            {{#if devoured}}
+                {{ burger_name}}
+            {{/if}}
+        {{/each}}           
+    </ul>
+
+
+</aside>
