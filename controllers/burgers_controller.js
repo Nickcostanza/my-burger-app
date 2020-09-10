@@ -19,4 +19,13 @@ router.post("/burger", function(req, res) {
         res.status(200).end();
     })
 });
-     
+    
+router.put('/burger/:id' function(req, res) {
+    var condition = "id = " + req.params.id;
+    burger.update(
+        {devoured: true},
+        condition, 
+        function(result) {
+            res.status(200).end();
+        })
+});
