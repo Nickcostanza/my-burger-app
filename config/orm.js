@@ -1,7 +1,7 @@
 //selectAll()
 //insertOne()
 //updateOne()
-const = require('./connection.js');
+const connection = require('./connection.js');
 
 var orm = {
     //selectall()
@@ -20,5 +20,17 @@ var orm = {
             if (err) throw err;
             cb(data);
         });
+    },
+
+    //update
+    UpdateOne: function(val, id, cb) {
+        let queryString = `UPDATE bugers SET devoured = ${val} WHERE id =${id}`;
+        connection.query(queryString, (err, data) => {
+            if (err) throw err;
+            cb(data);
+        })
     }
-}
+};
+
+
+module.exports = orm;

@@ -1,12 +1,12 @@
 var express = require('express');
 var router = express.Router();
 
-var burger = requier('../models/burger.js');
+var burger = require('../models/burger.js');
 
 router.get('/', function(req, res) {
-    burger.all(function(data) {
+    burger.selectAll(function(data) {
         var hbsObject = {
-            burger: data
+            burgers: data
         };
         res.render('index', hbsObject);
     });
@@ -20,14 +20,14 @@ router.post("/burger", function(req, res) {
     })
 });
     
-router.put('/burger/:id' function(req, res) {
+router.put('/burger/:id'), function(req, res) {
     var condition = "id = " + req.params.id;
-    burger.update(
+    burger.updateAll(
         {devoured: true},
         condition, 
         function(result) {
             res.status(200).end();
         })
-});
+};
 
 module.exports = router;
