@@ -24,7 +24,7 @@ var orm = {
 
     //update
     UpdateOne: function(val, id, cb) {
-        let queryString = `UPDATE bugers SET devoured = ${val} WHERE id =${id}`;
+        var queryString = `UPDATE bugers SET devoured = ${val} WHERE id =${id}`;
         connection.query(queryString, (err, data) => {
             if (err) throw err;
             cb(data);

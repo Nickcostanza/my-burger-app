@@ -1,4 +1,3 @@
-const { post } = require("../../controllers/burgers_controller");
 
 $('.submit').on('click', function(event) {
     event.preventDefault();
@@ -13,9 +12,8 @@ $('.submit').on('click', function(event) {
         }).then(function() {
             console.log('Created burger');
             location.reload();
-        }
-    })
-})
+        })  
+});
 
 $('.eatBurg').on('click', function() {
     let id = $(this).data('id');
