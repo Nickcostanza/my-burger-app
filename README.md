@@ -3,13 +3,6 @@
 ## About
 For this Project we were tasked with building an application that would allow a user to make a burger, and choose to eat it! 
 
-## Tech Used
-<ul>
-<li> HTML</li>
-<li> CSS</li>
-<li> JaveScript</li>
-<li> MySql </li>
-</ul>
 
 ## Links
 

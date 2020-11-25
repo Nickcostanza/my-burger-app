@@ -1,27 +1,33 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
-var burger = require('../models/burger.js');
+const burger = require('../models/burger.js');
 
+
+
+//select all
 router.get('/', function(req, res) {
     burger.selectAll(function(data) {
-        var hbsObject = {
+        let hbsObject = {
             burgers: data
         };
         res.render('index', hbsObject);
     });
 });
 
-router.post("/burger", function(req, res) {
+//insert one
+router.post('/burger', (req, res) => {
     burger.insertOne(['burger_name'],
     [req.body.burger_name], 
     function(result) {
         res.status(200).end();
     })
 });
-    
+  
+
+//update
 router.put('/burger/:id'), function(req, res) {
-    var condition = "id = " + req.params.id;
+    var condition = req.params.id;
     burger.updateOne(
         {devoured: true},
         condition, 
