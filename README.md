@@ -7,10 +7,13 @@ For this Project we were tasked with building an application that would allow a 
 ## Links
 
 [GithubRepo](https://github.com/Nickcostanza/my-burger-app)
+<br>
+[Youtube Video](https://youtu.be/aazclyoP0GA)
 
+![Image](./public/assets/img/homescreen.png)
 
-Unfortunatly I was unable to get this application functioning properly. 
-Im connected to database, and my post method is working, but my put is not. Css and UI have not been worked on due to the lack of functionality.
+App is functioning, was having trouble with deployment, so there is a video link to my youtube video for viewing of functionality.
+Css styling is still needed on this application.
 
 
 
