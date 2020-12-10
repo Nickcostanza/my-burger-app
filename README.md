@@ -8,7 +8,11 @@ For this Project we were tasked with building an application that would allow a 
 
 [GithubRepo](https://github.com/Nickcostanza/my-burger-app)
 
-Unfortunatly I was unable to get this application functioning properly. I need to get the connections with my database correct, and render user input on to the page.
+
+Unfortunatly I was unable to get this application functioning properly. 
+Im connected to database, and my post method is working, but my put is not. Css and UI have not been worked on due to the lack of functionality.
+
+
 
 
 

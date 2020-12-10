@@ -34,6 +34,7 @@ router.put('/burgers/:id', (req, res) => {
         condition,
         function (result) {
             res.status(200).end();
+           
     })
 });
 
