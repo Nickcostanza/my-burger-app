@@ -4,6 +4,8 @@
         <img class="center" src="\assets\img\burger.jpg" rel="hamburger">
     </header>
 
+<main class="main">
+<container class="madeBurgs">
 <h2>Burgers to be devoured</h2>
 
 <ul>
@@ -14,8 +16,10 @@
         {{/unless}}
     {{/each}}
 </ul>
+</container>
 
 
+<container class="eatenBurgs"></container>
 <h2>Burgers that have been devoured</h2>
 
 <ul>
@@ -25,7 +29,9 @@
         {{/if}}
     {{/each}}
 </ul>
+</container>
 
+<container class="addBurgs"></container>
 <h2>Add a Burger</h2>
 <form class="create-form">
   <div>
@@ -35,3 +41,5 @@
 
   <button type="submit" class="submit">Add Burger</button>
 </form>
+</container>
+</
