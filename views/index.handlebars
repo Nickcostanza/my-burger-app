@@ -3,13 +3,13 @@
         <br>
         <img class="center" src="\assets\img\burger.jpg" rel="hamburger">
     </header>
-
+<container>
 <h2>Burgers to be devoured</h2>
 
 <ul>
     {{#each burgers}}
         {{#unless devoured}}
-            <button class="eatMe" data-id="{{id}}" type="button">
+            <button class="eatMe btn btn-warning" data-id="{{id}}" type="button">
             {{ burger_name }}  </button>
         {{/unless}}
     {{/each}}
@@ -33,5 +33,6 @@
     <input type="text" id="burger" name="burger_name">
   </div>
 
-  <button type="submit" class="submit">Add Burger</button>
+  <button type="submit" class="submit btn btn-danger">Add Burger</button>
 </form>
+</container>
