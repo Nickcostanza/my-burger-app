@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/Nickcostanza/my-burger-app/issues"
   },
-  "homepage": "https://github.com/Nickcostanza/my-burger-app#readme",
+  "homepage": "https://burger-shop-nc.herokuapp.com/",
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.1.0",
